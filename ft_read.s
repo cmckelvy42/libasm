@@ -37,3 +37,6 @@ FT_READ_NO_SIZE:
 		mov [rax], r15
 		mov  rax, 0
 		ret
+FT_READ_NULLPO					;gah
+		mov rax, 14
+		jmp FT_READ_ERROR
