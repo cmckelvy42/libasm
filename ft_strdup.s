@@ -1,6 +1,6 @@
 		extern _ft_strlen
 		extern _ft_strcpy
-		extern malloc
+		extern _malloc
 
 		global _ft_strdup
 
@@ -13,7 +13,7 @@ _ft_strdup:
 		inc		rax			; len++ for '\0'
 
 		mov		rdi, rax	; size to malloc
-		call	malloc		;malloc return string
+		call	_malloc		;malloc return string
 		cmp		rax, 0
 		je		FT_STRDUP_ERROR
 

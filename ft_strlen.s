@@ -1,8 +1,8 @@
 
-		global	ft_strlen
+		global	_ft_strlen
 
 		section	.text
-ft_strlen:
+_ft_strlen:
 		xor		rax, rax			; i = 0
 		mov		rax, -1				; condenses things later
 		jmp		loop

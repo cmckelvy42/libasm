@@ -6,7 +6,7 @@
 #    By: cmckelvy <cmckelvy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/19 15:12:23 by cmckelvy          #+#    #+#              #
-#    Updated: 2020/04/23 13:05:26 by cmckelvy         ###   ########.fr        #
+#    Updated: 2020/04/19 15:17:24 by cmckelvy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,6 @@ all: $(NAME)
 
 $(NAME): $(ASMOBJ)
 	$(LIB) $(NAME) $(ASMOBJ)
-	ranlib $(NAME)
 
 test: all
 	$(CC) main.c $(NAME)
